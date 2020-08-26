@@ -1,0 +1,19 @@
+<h2>Competitions</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Sport</th>
+      <th>Location</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+    {{#each @model as |comp|}}
+      <tr>
+        <td>{{comp.name}}</td>
+        <td>{{comp.sport}}</td>
+        <td>{{comp.location}}</td>
+        <td>{{comp.startDate}}</td>
+        <td>{{comp.endDate}}</td>
+      </tr>
+    {{/each}}
+  </table>
